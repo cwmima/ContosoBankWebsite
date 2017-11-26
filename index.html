@@ -1,114 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gavin Cheng">
 
-<head>
+        <title>Contoso Bank - Personal & Business Banking in New Zealand</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Gavin Cheng">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
-    <title>Contoso Bank - Personal & Business Banking in New Zealand</title>
+        <!-- import Google fonts for a better design -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- roles and aria-labels added to improve accessibility -->
+    <body background="bg.jpg">
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+        <!-- Skip navigation link added for keyboard users -->
+        <a href="#content" class="sr-only">Skip to main content</a>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
-</head>
-
-<body background="bg.jpg">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#" style="font-weight: bold;"> Contoso</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Personal</a>
-                    </li>
-                    <li id="case-nav">
-                        <a href="#">Business</a>
-                    </li>
-                    <li id="case-nav">
-                        <a href="#">Join Contoso</a>
-                    </li>
-                    <li id="case-nav">
-                        <a href="#">About</a>
-                    </li>
-                    <li id="case-nav">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-user"></span> My Contoso <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">My Profile</a></li>
-                            <li><a href="#">Log Out</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row" style="padding-top: 50px;">
-            <div class="col-md-7 transparent" style="padding-top: 20px;">
-                <p class="home-title"><b>Welcome to Contoso Bank</b></p>
-
-                <div id="introduction">
-                    <legend>Our mission</legend>
-                    <p >We strive to consistently provide our customers with outstanding service and innovative financial solutions. We're dedicated to providing simple financial products that allow our customers to bank with us how and when they want.</p>
-                    <legend>Sustainability and corporate responsibility</legend>
-                    <p>As a staunchly Kiwi bank, doing what’s right for New Zealand is part of our makeup. This means running our business in a sustainable way – environmentally, socially, and just plain nicely.</p>
-                    <legend>Our awards cupboard</legend>
-                    <p>Like most Kiwis, we don't like to brag – we just get on with it. We're doing what we set out to do – making banking better for New Zealanders. The awards we've won are proof of that.</p>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-weight: bold;"> Contoso</a>
                 </div>
-        </div>
-        </div>
-    
-        <div class="right-part">
-            <div class="panel panel-info" id="live-chat">
-                <div id="chat-box">
-                    <iframe src='https://webchat.botframework.com/embed/contoso-bot1?s=FVLMHxapwC8.cwA.v6E.9-dni2CbmTGwx285WNqT-lMT5RDwvkL2zVB5KA-Exq4'></iframe>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="left-navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Personal</a>
+                        </li>
+                        <li id="case-nav">
+                            <a href="#">Business</a>
+                        </li>
+                        <li id="case-nav">
+                            <a href="#">Join Contoso</a>
+                        </li>
+                        <li id="case-nav">
+                            <a href="#">About</a>
+                        </li>
+                        <li id="case-nav">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right" role="right-navbar"> 
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-user"></span> My Contoso <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="group">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
-            <div>
-                <button type="button" class="btn btn-info" id="live-chat-toggle" onclick="live_chat_toggle()">Contoso Bot Chat <span class="glyphicon glyphicon-triangle-top"></span></button>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container" id="content">
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-md-7 transparent" style="padding-top: 20px;">
+                    <p class="home-title"><b>Welcome to Contoso Bank</b></p>
+
+                    <div id="introduction" aria-label="introduction">
+                        <legend>Our mission</legend>
+                        <p >We strive to consistently provide our customers with outstanding service and innovative financial solutions. We're dedicated to providing simple financial products that allow our customers to bank with us how and when they want.</p>
+                        <legend>Sustainability and corporate responsibility</legend>
+                        <p>As a staunchly Kiwi bank, doing what’s right for New Zealand is part of our makeup. This means running our business in a sustainable way – environmentally, socially, and just plain nicely.</p>
+                        <legend>Our awards cupboard</legend>
+                        <p>Like most Kiwis, we don't like to brag – we just get on with it. We're doing what we set out to do – making banking better for New Zealanders. The awards we've won are proof of that.</p>
+                    </div>
+            </div>
+            </div>
+        
+            <div class="right-part">
+                <div class="panel panel-info" id="live-chat">
+                    <div id="chat-box" aria-label="ContosoBot chat box">
+                        <iframe src='https://webchat.botframework.com/embed/contoso-bot1?s=FVLMHxapwC8.cwA.v6E.9-dni2CbmTGwx285WNqT-lMT5RDwvkL2zVB5KA-Exq4'></iframe>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info" id="live-chat-toggle" onclick="live_chat_toggle()" aria-label="Toggle ContosoBot chat box">
+                        Contoso Bot Chat <span class="glyphicon glyphicon-triangle-top"></span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
+        <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 
-    <script src="js/script.js"></script>
-
-</body>
-
+    </body>
 </html>
